@@ -11,4 +11,11 @@ class RegisterController extends Controller
     {
         return view('register');
     }
+    function create(Request $req){
+        User::create([
+            'name' => $req->name,
+            'email' => $req->email,
+            'password' => $req->password
+        ]);
+    }
 }
