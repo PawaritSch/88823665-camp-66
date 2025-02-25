@@ -1,4 +1,4 @@
-@extends('layouts.blank')
+@extends('layouts.default')
 @section('title')
     CAMP-66 | Register
 @endsection
